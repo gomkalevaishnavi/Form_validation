@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Modification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f54c73692d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+           <div class="input-group">
+            <label> Full Name</label>
+            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+           </div>
+           <div class="input-group">
+            <label>Phone No.</label>
+            <input type="text" placeholder="9999999999" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+           </div>
+           <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="god@gmail.com" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+           </div>
+           <div class="input-group">
+            <label>Message</label>
+            <input type="text" placeholder="Enter your message" id="contact-msg" onkeyup="validateMsg()">
+            <span id="msg-error"></span>
+
+        </div>
+
+           <button onclick="return validateForm()">Submit</button>
+           <span id="submit-error"></span>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
